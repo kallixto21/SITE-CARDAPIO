@@ -6,4 +6,4 @@
 - **Integração Nativa com WhatsApp**: Envio estruturado da ordem de pedido formatada diretamente para o WhatsApp do estabelecimento.
 - **Componentes Utilitários**: Botão flutuante de WhatsApp, botão "Voltar ao Topo"
 
-COM AJUDA DAS MINHAS SKILL CLAUDE CODE
+COM AJUDA DAS MINHAS SKILL's CLAUDE CODE

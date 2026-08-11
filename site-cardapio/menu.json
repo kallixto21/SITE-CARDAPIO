@@ -1,0 +1,314 @@
+{
+  "restaurant": {
+    "name": "Ponto 45 Food",
+    "phone": "5545988018677",
+    "deliveryTime": "40-60 min",
+    "deliveryFee": 8.00
+  },
+  "categories": [
+    { "id": "entradas", "name": "Entradas" },
+    { "id": "porcoes", "name": "Porções" },
+    { "id": "hamburgueres", "name": "Hambúrgueres" },
+    { "id": "combos", "name": "Combos" },
+    { "id": "bebidas", "name": "Sucos Naturais" }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "categoryId": "entradas",
+      "name": "Entradinhas (400g)",
+      "description": "Pepino, azeitona, ovo de codorna e queijo.",
+      "price": 39.50,
+      "image": "https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 2,
+      "categoryId": "entradas",
+      "name": "Coxinha de Frango com Cream Cheese (300g)",
+      "description": "Coxinhas recheadas com frango e muito cream cheese.",
+      "price": 39.50,
+      "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 3,
+      "categoryId": "entradas",
+      "name": "Coxinha de Costela (300g)",
+      "description": "Coxinhas com massa crocante recheadas de costela.",
+      "price": 39.50,
+      "image": "https://images.unsplash.com/photo-1626082895617-2c636735db94?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Mais pedido"]
+    },
+    {
+      "id": 4,
+      "categoryId": "entradas",
+      "name": "Kibe com Requeijão (300g)",
+      "description": "Kibes fritos recheados com requeijão cremoso.",
+      "price": 39.50,
+      "image": "https://images.unsplash.com/photo-1577906096429-f73c2c312435?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 5,
+      "categoryId": "entradas",
+      "name": "Bolinho de Carne com Queijo (400g)",
+      "description": "Porção de bolinhos de carne recheados com queijo derretido.",
+      "price": 59.90,
+      "image": "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 6,
+      "categoryId": "entradas",
+      "name": "Tulipinha Empanada (400g)",
+      "description": "Tulipinhas de frango crocantes e empanadas.",
+      "price": 65.00,
+      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 7,
+      "categoryId": "porcoes",
+      "name": "Polenta Frita (500g)",
+      "description": "Polenta tradicional frita e crocante.",
+      "price": 34.90,
+      "image": "https://images.unsplash.com/photo-1600171097223-96b6bf0eb6d8?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 8,
+      "categoryId": "porcoes",
+      "name": "Polenta Frita Especial (500g)",
+      "description": "Polenta frita com acompanhamentos especiais da casa.",
+      "price": 42.00,
+      "image": "https://images.unsplash.com/photo-1600171097223-96b6bf0eb6d8?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 9,
+      "categoryId": "porcoes",
+      "name": "Mandioca Frita (500g)",
+      "description": "Mandioca frita, sequinha e macia por dentro.",
+      "price": 38.00,
+      "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 10,
+      "categoryId": "porcoes",
+      "name": "Calabresa Acebolada (400g)",
+      "description": "Porção de calabresa fatiada e acebolada.",
+      "price": 39.90,
+      "image": "https://images.unsplash.com/photo-1628293976839-813cbf2b8df1?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 11,
+      "categoryId": "porcoes",
+      "name": "Batata Frita (400g)",
+      "description": "Porção individual/média de batata frita.",
+      "price": 30.00,
+      "image": "https://images.unsplash.com/photo-1576107246223-2882f07242d5?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 12,
+      "categoryId": "porcoes",
+      "name": "Batata Frita (800g)",
+      "description": "Porção grande de batata frita.",
+      "price": 39.90,
+      "image": "https://images.unsplash.com/photo-1576107246223-2882f07242d5?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 13,
+      "categoryId": "porcoes",
+      "name": "Batata Frita c/ Cheddar e Bacon (400g)",
+      "description": "Média, com queijo cheddar cremoso e bacon.",
+      "price": 40.00,
+      "image": "https://images.unsplash.com/photo-1555562810-749d21ceeb39?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 14,
+      "categoryId": "porcoes",
+      "name": "Batata Frita c/ Cheddar e Bacon (800g)",
+      "description": "Grande, com muito queijo cheddar cremoso e bacon.",
+      "price": 54.00,
+      "image": "https://images.unsplash.com/photo-1555562810-749d21ceeb39?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Mais pedido"]
+    },
+    {
+      "id": 15,
+      "categoryId": "porcoes",
+      "name": "Batata Frita Mexicana (400g)",
+      "description": "Porção de 400g.",
+      "price": 38.00,
+      "image": "https://images.unsplash.com/photo-1626082895617-2c636735db94?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Apimentado"]
+    },
+    {
+      "id": 16,
+      "categoryId": "porcoes",
+      "name": "Batata Frita Mexicana (800g)",
+      "description": "Porção de 800g.",
+      "price": 50.00,
+      "image": "https://images.unsplash.com/photo-1626082895617-2c636735db94?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Apimentado"]
+    },
+    {
+      "id": 17,
+      "categoryId": "porcoes",
+      "name": "Frango a Passarinho (500g)",
+      "description": "Porção média.",
+      "price": 39.90,
+      "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 18,
+      "categoryId": "porcoes",
+      "name": "Frango a Passarinho (700g)",
+      "description": "Porção grande.",
+      "price": 49.90,
+      "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 19,
+      "categoryId": "porcoes",
+      "name": "Filé de Tilápia (300g)",
+      "description": "Porção média.",
+      "price": 45.00,
+      "image": "https://images.unsplash.com/photo-1599084920624-9118c7d66928?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 20,
+      "categoryId": "porcoes",
+      "name": "Filé de Tilápia (500g)",
+      "description": "Porção grande.",
+      "price": 69.90,
+      "image": "https://images.unsplash.com/photo-1599084920624-9118c7d66928?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 21,
+      "categoryId": "porcoes",
+      "name": "Alcatra (400g)",
+      "description": "Acebolada ou ao molho mostarda. Informe a preferência na observação.",
+      "price": 69.90,
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 22,
+      "categoryId": "hamburgueres",
+      "name": "X-Salada",
+      "description": "Pão, maionese da casa, milho, alface, tomate, hambúrguer 120g e queijo.",
+      "price": 23.00,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 23,
+      "categoryId": "hamburgueres",
+      "name": "X-Calabresa",
+      "description": "Pão, maionese da casa, milho, alface, tomate, hambúrguer 120g, queijo e calabresa.",
+      "price": 29.00,
+      "image": "https://images.unsplash.com/photo-1594212886026-c225019d3fbc?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 24,
+      "categoryId": "hamburgueres",
+      "name": "X-Bacon",
+      "description": "Pão, maionese da casa, milho, alface, tomate, hambúrguer 120g, queijo e bacon.",
+      "price": 30.00,
+      "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 25,
+      "categoryId": "hamburgueres",
+      "name": "X-Frango Catupiry",
+      "description": "Pão, maionese da casa, milho, alface, tomate, hambúrguer 120g, queijo, frango e catupiry.",
+      "price": 32.00,
+      "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 26,
+      "categoryId": "hamburgueres",
+      "name": "X-Tudo",
+      "description": "Pão, maionese da casa, milho, alface, tomate, hambúrguer 120g, queijo, ovo, bacon e calabresa.",
+      "price": 36.00,
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Mais pedido"]
+    },
+    {
+      "id": 27,
+      "categoryId": "hamburgueres",
+      "name": "X-Costela",
+      "description": "Pão, maionese da casa, hambúrguer 120g, queijo, costela desfiada e geleia agridoce.",
+      "price": 42.00,
+      "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Chef"]
+    },
+    {
+      "id": 28,
+      "categoryId": "hamburgueres",
+      "name": "X-Alcatra",
+      "description": "Pão, maionese da casa, hambúrguer 120g, queijo, alcatra e rúcula.",
+      "price": 42.00,
+      "image": "https://images.unsplash.com/photo-1594212886026-c225019d3fbc?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 29,
+      "categoryId": "combos",
+      "name": "Combo Feliz (3 Pessoas)",
+      "description": "Pão, maionese da casa, milho, alface, tomate, hambúrguer 120g e queijo.",
+      "price": 99.90,
+      "image": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 30,
+      "categoryId": "combos",
+      "name": "Combo Família (3 Pessoas)",
+      "description": "Batata frita (600g), frango frito (500g), calabresa acebolada (400g).",
+      "price": 115.00,
+      "image": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Promoção"]
+    },
+    {
+      "id": 31,
+      "categoryId": "combos",
+      "name": "Combo do Ponto (3 Pessoas)",
+      "description": "Batata frita (600g), filé de tilápia (300g), alcatra (400g).",
+      "price": 139.90,
+      "image": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=400&q=80",
+      "tags": ["Mais pedido"]
+    },
+    {
+      "id": 32,
+      "categoryId": "bebidas",
+      "name": "Suco Natural (com Água)",
+      "description": "Sabores: Laranja, Acerola, Abacaxi, Abacaxi com Hortelã, Morango, Maracujá ou Uva. (Informe o sabor nas observações).",
+      "price": 12.00,
+      "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    },
+    {
+      "id": 33,
+      "categoryId": "bebidas",
+      "name": "Suco Natural (com Leite)",
+      "description": "Sabores: Laranja, Acerola, Abacaxi, Abacaxi com Hortelã, Morango, Maracujá ou Uva. (Informe o sabor nas observações).",
+      "price": 15.00,
+      "image": "https://images.unsplash.com/photo-1628543105338-081ba7910972?auto=format&fit=crop&w=400&q=80",
+      "tags": []
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ponto 45 Food - Delivery de Porções e Hambúrgueres Artesanais.">
+    <meta name="theme-color" content="#111111">
+    
+    <title>Ponto 45 Food | Delivery</title>
+    <meta property="og:title" content="Ponto 45 Food | Delivery">
+    <meta property="og:description" content="Faça seu pedido agora de forma rápida e prática.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <h1 class="logo">Ponto 45 <span>Food</span></h1>
+            <button class="cart-toggle" aria-label="Abrir carrinho" id="open-cart-btn">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                <span class="cart-badge" id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="hero-title">O Melhor Hambúrguer e Porções</h2>
+            <p class="hero-slogan">Sabor que impressiona, entrega que funciona.</p>
+            <div class="hero-info">
+                <span id="delivery-time-info">⏳ -- min</span>
+                <span id="delivery-fee-info">🛵 Taxa: R$ --</span>
+            </div>
+        </div>
+    </section>
+
+    <nav class="category-nav">
+        <div class="container category-scroll" id="category-list"></div>
+    </nav>
+
+    <main class="container menu-section" id="menu-container">
+        <div class="skeleton-grid">
+            <div class="skeleton-card" style="height: 350px; background: #1e1e1e; border-radius: 12px;"></div>
+            <div class="skeleton-card" style="height: 350px; background: #1e1e1e; border-radius: 12px;"></div>
+            <div class="skeleton-card" style="height: 350px; background: #1e1e1e; border-radius: 12px;"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3 class="logo">Ponto 45 <span>Food</span></h3>
+            <p>Faça agora o seu pedido!</p>
+            <div class="social-links">
+                <a href="https://instagram.com/ponto45food" target="_blank" aria-label="Instagram">@ponto45food</a>
+                <a href="#" aria-label="WhatsApp">(45) 98801-8677</a>
+            </div>
+            <p class="copyright">© 2026 Ponto 45 Food. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5545988018677" target="_blank" class="fab-whatsapp" aria-label="Falar no WhatsApp" id="fab-wa">
+        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.383 0 0 5.383 0 12.031c0 2.158.563 4.256 1.635 6.103L.103 24l6.012-1.579c1.782 1.01 3.8 1.543 5.916 1.543 6.648 0 12.031-5.383 12.031-12.031C24 5.383 18.679 0 12.031 0zm3.585 17.202c-.524 1.488-2.617 2.05-3.666 1.83-1.049-.22-3.616-1.547-5.111-3.642-1.496-2.095-2.203-4.148-1.99-5.69.213-1.542 1.258-2.259 1.834-2.48.576-.22 1.205-.055 1.52.732.314.787 1.048 2.624 1.153 2.834.105.21.052.525-.157.84-.21.315-.472.577-.682.787-.21.21-.42.472-.157.945.263.473 1.154 1.942 2.464 3.149 1.31 1.207 2.78 1.627 3.252 1.837.472.21.734.157.944-.105.21-.263.787-.997 1.05-1.312.262-.315.524-.263.944-.105.42.157 2.623 1.26 3.043 1.47.42.21.682.315.787.525.105.21.052 1.155-.472 2.645z"/></svg>
+    </a>
+    <button class="fab-totop" aria-label="Voltar ao topo" id="fab-top">↑</button>
+
+    <!-- Modais -->
+    <dialog class="modal" id="item-modal">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fechar" id="close-item-modal">&times;</button>
+            <img id="modal-img" src="" alt="" loading="lazy">
+            <div class="modal-body">
+                <h3 id="modal-title" class="playfair"></h3>
+                <p id="modal-desc"></p>
+                <p id="modal-price" class="price-tag"></p>
+                <div class="form-group">
+                    <label for="modal-notes">Observações</label>
+                    <textarea id="modal-notes" placeholder="Ex: Sem cebola, bem passado..." rows="2"></textarea>
+                </div>
+                <div class="modal-actions">
+                    <div class="qty-control">
+                        <button id="modal-qty-minus" aria-label="Diminuir">-</button>
+                        <span id="modal-qty">1</span>
+                        <button id="modal-qty-plus" aria-label="Aumentar">+</button>
+                    </div>
+                    <button class="btn-primary" id="modal-add-btn">Adicionar <span id="modal-total"></span></button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h2 class="playfair">Seu Pedido</h2>
+            <button class="close-cart" id="close-cart-btn" aria-label="Fechar carrinho">&times;</button>
+        </div>
+        <div class="cart-body" id="cart-items-container"></div>
+        <div class="cart-footer">
+            <div class="cart-totals">
+                <div class="tot-line"><span>Subtotal</span> <span id="cart-subtotal">R$ 0,00</span></div>
+                <div class="tot-line"><span>Taxa de Entrega</span> <span id="cart-fee">R$ 0,00</span></div>
+                <div class="tot-line grand-total"><span>Total</span> <span id="cart-total">R$ 0,00</span></div>
+            </div>
+            <button class="btn-primary btn-block" id="btn-checkout" disabled>Finalizar Pedido</button>
+        </div>
+    </aside>
+
+    <dialog class="modal" id="checkout-modal">
+        <div class="modal-content checkout-content">
+            <button class="close-modal" id="close-checkout-modal" aria-label="Fechar">&times;</button>
+            <h3 class="playfair">Dados de Entrega</h3>
+            <form id="checkout-form">
+                <div class="form-group"><input type="text" id="c-name" placeholder="Nome Completo *" required></div>
+                <div class="form-group"><input type="tel" id="c-phone" placeholder="Telefone (WhatsApp) *" required></div>
+                <div class="form-row">
+                    <div class="form-group flex-3"><input type="text" id="c-address" placeholder="Endereço *" required></div>
+                    <div class="form-group flex-1"><input type="text" id="c-number" placeholder="Nº *" required></div>
+                </div>
+                <div class="form-group"><input type="text" id="c-comp" placeholder="Complemento"></div>
+                <div class="form-group"><input type="text" id="c-neighborhood" placeholder="Bairro *" required></div>
+                
+                <h4 class="playfair mt-2">Pagamento</h4>
+                <div class="form-group">
+                    <select id="c-payment" required>
+                        <option value="" disabled selected>Escolha a forma de pagamento</option>
+                        <option value="PIX">PIX</option>
+                        <option value="Cartão de Crédito">Cartão de Crédito</option>
+                        <option value="Cartão de Débito">Cartão de Débito</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                    </select>
+                </div>
+                <div class="form-group hidden" id="change-group">
+                    <input type="number" id="c-change" placeholder="Troco para quanto? (Se necessário)">
+                </div>
+
+                <button type="submit" class="btn-primary btn-block mt-2" id="btn-send-whatsapp">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px; vertical-align: middle;"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 21.6a9.6 9.6 0 1 1 0-19.2 9.6 9.6 0 0 1 0 19.2zM16.8 9.6l-6 6-3.6-3.6 1.2-1.2 2.4 2.4 4.8-4.8 1.2 1.2z"/></svg>
+                    Enviar Pedido
+                </button>
+            </form>
+        </div>
+    </dialog>
+
+    <div id="toast-container"></div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
